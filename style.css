@@ -1,0 +1,112 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   background-color: #000000;
+    color: #fff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 30px;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+nav ul li a:hover {
+    border-bottom: 2px solid #22e8b9;
+}
+
+
+
+.hero{
+    padding: 50px 10px;
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, rgba(3, 43, 29, 0.781) 0%, #1f2329 100%);
+}
+.hero button{
+    background-color: #10b981;
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: rgb(252, 244, 244);
+}
+.hero button:hover{
+    background-color: #22e8b9;
+    box-shadow: 0 4px 20px rgba(34, 232, 185, 0.3);
+    color: #000000;
+}
+
+
+
+.offerings-section h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.offerings-grid{
+    padding: 50px 10px;
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.card{
+    min-height: 150px;
+    background-color: #1f2329;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.offerings-section .card:hover{
+    background-color: #22e8ba71;
+    box-shadow: 0 4px 20px rgba(31, 182, 147, 0.781);
+    color: #000000;
+}
+
+
+
+.footer{
+    background-color: #1f2329;
+    padding: 20px;
+    text-align: center;
+}
+.footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.footer img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+@media(max-width:768px){
+    .offerings-grid{
+        grid-template-columns:1fr;
+    }
+    header {
+        flex-direction: column; 
+    }
+}
